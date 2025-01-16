@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="convert.html">convert currency</a>
+    <h2><u>ADVERTISEMT</u></h2>
+    <video width="1000" height="500" autoplay loop muted>
+        <source src="https://videos.pexels.com/video-files/7308103/7308103-hd_1920_1080_24fps.mp4" type="video/mp4" />
+        <source src="movie.ogg" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="special-offer">
+
+        <h2>Special Offer!</h2>
+      
+        <p>Get 20% off your next purchase!</p>
+      
+        <p>Use code: SUMMER20</p>
+      
+        <p class="expiry">Expires: [14feb]</p>
+      
+      </div>
+      
+    
+<div class="admin-section">
+    <a href="admin.html" class="admin-link" id="admin-link">Admin Page</a>
+</div>
+    <h1>Welcome to Our Café</h1>
+
+    <!-- Menu Section -->
+    <div class="menu">
+        <!-- Item 1 -->
+        <div class="menu-item">
+            <img src="https://t4.ftcdn.net/jpg/01/16/61/93/360_F_116619399_YA611bKNOW35ffK0OiyuaOcjAgXgKBui.jpg" alt="Coffee">
+            <h2>Coffee</h2>
+            <p>Price: 50.00rs</p>
+            <input type="number" id="coffee-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Coffee', 50.00, 'coffee-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU=" alt="Pizza">
+            <h2>Pizza</h2>
+            <p>Price: 350.00rs</p>
+            <input type="number" id="pizza-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Pizza', 350.00, 'pizza-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/1184359662/photo/stir-fried-noodles-close-up.jpg?s=612x612&w=0&k=20&c=1pdlG0GTjYN338wj2Dm_M7VWBJNfWQGMvXl9giMgPE4=" alt="chaw mein">
+            <h2>chaw mein</h2>
+            <p>Price: 60.00rs</p>
+            <input type="number" id="chaw mein-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('chaw mein', 60.00, 'chaw mein-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/1352245/pexels-photo-1352245.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ice cream">
+            <h2>ice cream</h2>
+            <p>Price: 25.00rs</p>
+            <input type="number" id="ice cream-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('ice cream', 25.00, 'ice cream-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-item">
+            <img src="https://t3.ftcdn.net/jpg/02/18/53/26/360_F_218532663_Meqbe06Mqr4X7DV3vfM4usMkfML47thJ.jpg" alt="Tea">
+            <h2>Tea</h2>
+            <p>Price: 20.00rs</p>
+            <input type="number" id="tea-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Tea', 20.00, 'tea-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salad">
+            <h2>Salad</h2>
+            <p>Price: 50.00rs</p>
+            <input type="number" id="salad-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Salad', 50.00, 'salad-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-item">
+            <img src="https://www.shutterstock.com/image-photo/spicy-spaghetti-shrimp-mussel-on-260nw-1762207571.jpg" alt="Spaghetti">
+            <h2>Spaghetti</h2>
+            <p>Price: 200.00rs</p>
+            <input type="number" id="spaghetti-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Spaghetti', 200.00, 'spaghetti-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-item">
+            <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg" alt="Pasta">
+            <h2>Pasta</h2>
+            <p>Price: 50.00rs</p>
+            <input type="number" id="pasta-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Pasta', 50.00, 'pasta-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/511622035/photo/heallthy-organic-fruit-salad.jpg?s=612x612&w=0&k=20&c=Nl3vuD8QLVCWCzFqiHBvRQzeoY2p0chmhzuPsW2hNBA=" alt="Fruit Salad">
+            <h2>Fruit Salad</h2>
+            <p>Price: 35.00rs</p>
+            <input type="number" id="fruit-salad-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Fruit Salad', 35.00, 'fruit-salad-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/938464946/photo/milk-containers-on-wooden-table-in-sunny-rustic-kitchen.jpg?s=612x612&w=0&k=20&c=qZ5uJ0sf0IE3QlStLKDB8UIXbD5H0sxpaqyZmrkPZ2I=" alt="Milk">
+            <h2>Milk</h2>
+            <p>Price: 65.00rs</p>
+            <input type="number" id="milk-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Milk', 65.00, 'milk-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/1323194107/photo/plant-based-black-bean-burger-on-a-sesame-seed-bun.jpg?s=612x612&w=0&k=20&c=m4TXkYuG20dE6ZqRZz8PdVU6HIUWoJqizaxOmf418pQ=" alt="Veggie Burger">
+            <h2>Veggie Burger</h2>
+            <p>Price: 150.00rs</p>
+            <input type="number" id="veggie-burger-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Veggie Burger', 150.00, 'veggie-burger-qty')">Add to Order</button>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="menu-item">
+            <img src="https://media.istockphoto.com/id/503704970/photo/fresh-fruit-smoothies.jpg?s=612x612&w=0&k=20&c=lbhlRB41vLqRDNxXJfOFU79Rb2Tje4h0WeQMSDln_yY=" alt="Fruit Smoothie">
+            <h2>Fruit Smoothie</h2>
+            <p>Price: 95.00rs</p>
+            <input type="number" id="fruit-smoothie-qty" placeholder="Quantity" min="1" value="1">
+            <button onclick="addToBill('Fruit Smoothie', 95.00, 'fruit-smoothie-qty')">Add to Order</button>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2>Order Details</h2>
+        <input type="number" id="table-number" placeholder="Enter your Table Number" required>
+        <button onclick="submitOrder()">Submit Order</button>
+        <button onclick="clearBill()">Clear Bill</button>
+        <div id="order-summary"></div>
+    </div>
+    
+    <!-- Feedback Section -->
+    <div class="feedback">
+        <h2>Feedback</h2>
+        <form id="feedback-form">
+            <label for="rating">Rate your experience (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <label for="comments">Leave a comment:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your comments..."></textarea>
+            <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+        </form>
+        <div id="feedback-output"></div>
+    </div>
+    
+<!-- 
+<div class="admin-section">
+    <a href="admin.html" class="admin-link" id="admin-link">Admin Page</a>
+</div> -->
+
+<div>
+    <a href="owner.html" class="owner-link" id="owner-link">owner Page</a>
+</div>
+<div>
+    <h2>COOKING MANAGEMENT OF ITEMS</h2>
+    <P>Burger= 10minutes</P>
+    <P>fruit Smoothie= 10min</P>
+    <P>pizza= 20min</P>
+    <P>Coffee= 10min</P>
+    <P>chaw mein= 15min</P>
+    <P>tea= 10min</P>
+    <P>salad= 5min</P>
+    <P>milk= 5minutes</P>
+    <p>ice cream= 5min</p>
+    <p>Spaghetti= 10min</p>
+    <p>Fruit Salad= 5min</p>
+    <p>Veggie Burger= 15min</p>
+    
+
+
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

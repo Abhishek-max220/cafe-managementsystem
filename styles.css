@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+video {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #6B4226;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.menu-item h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.menu-item input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6B4226;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #543319;
+}
+
+.order-section, .feedback {
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.admin-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.admin-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6B4226;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.admin-link:hover {
+    background-color: #543319;
+}
